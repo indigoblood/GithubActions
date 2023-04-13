@@ -32,7 +32,7 @@ namespace GithubActionsLab
         
         
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_ValidBlood()
         {
             Assert.AreEqual(3, Program.Subtract("5", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
@@ -40,7 +40,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_InvalidBlood()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -48,7 +48,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_NullBlood()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -57,7 +57,7 @@ namespace GithubActionsLab
         
         
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_ValidBlood()
         {
             Assert.AreEqual(10, Program.Multiply("5", "2"));
             Assert.AreEqual(6, Program.Multiply("3", "2"));
@@ -65,7 +65,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_InvalidBlood()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -73,7 +73,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_NullBlood()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -83,7 +83,7 @@ namespace GithubActionsLab
         
         
         [Test]
-        public void Divide_Valid()
+        public void Divide_ValidBlood()
         {
             Assert.AreEqual(3, Program.Divide("6", "2"));
             Assert.AreEqual(2, Program.Divide("4", "2"));
@@ -91,7 +91,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_InvalidBlood()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -99,7 +99,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_NullBlood()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -109,7 +109,7 @@ namespace GithubActionsLab
         
         
         [Test]
-        public void Power_Valid()
+        public void Power_ValidBlood()
         {
             Assert.AreEqual(4, Program.Power("2", "2"));
             Assert.AreEqual(2, Program.Power("2", "1"));
@@ -117,7 +117,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_InvalidBlood()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -125,7 +125,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_NullBlood()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
