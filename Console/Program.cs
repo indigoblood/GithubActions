@@ -1,4 +1,5 @@
 ﻿using System;
+ using Math.h;
 
 namespace GithubActionsLab
 {
@@ -84,13 +85,7 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            double a = double.parse(y);
-            double b = double.parse(x); 
-            while (a > 1) {
-                b = b * b;
-                a = a - 1;
-            }
-            return b;
+            return Math.pow(double.parse(x), double.parse(y));
         }
     }
 
