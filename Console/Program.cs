@@ -84,7 +84,13 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            double a = double.parse(y);
+            double b = double.parse(x); 
+            while (a > 1) {
+                b = b * b;
+                a = a - 1;
+            }
+            return b;
         }
     }
 
